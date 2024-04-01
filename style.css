@@ -1,0 +1,864 @@
+/*TODO 폰트 처리*/
+@font-face {
+    font-family: 'nanum-square-L';
+    src: url('font/NanumSquareL.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nanum-square-B';
+    src: url('font/NanumSquareB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g1';
+    src: url('font/NanumGothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g2';
+    src: url('font/KoPubDotumBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g3';
+    src: url('font/NanumSquareEB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g4';
+    src: url('font/SourceHanSansKR-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g5';
+    src: url('font/JejuGothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g6';
+    src: url('font/BMJUA_ttf.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g7';
+    src: url('font/YiSunShinDotumB.woff2') format('woff2'),
+    url('font/YiSunShinDotumB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'g8';
+    src: url('font/12濡�뜲留덊듃�됰났bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g9';
+    src: url('font/116angduk_honesty1.5.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g10';
+    src: url('font/SCDream5.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g11';
+    src: url('font/a�쏅궇紐⑹슃�뷓.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'g12';
+    src: url('font/寃쎄린泥쒕뀈�쒕ぉ_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm1';
+    src: url('font/NanumMyeongjoBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm2';
+    src: url('font/NotoSerifCJKkr-SemiBold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm3';
+    src: url('font/KoPubBatangBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm4';
+    src: url('font/BareunBatangB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm5';
+    src: url('font/JejuMyeongjo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm6';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'm7';
+    src: url('font/寃쎄린泥쒕뀈諛뷀깢_Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm8';
+    src: url('font/HANBatangB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm9';
+    src: url('font/Arita-buriB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm10';
+    src: url('font/DaehanB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm11';
+    src: url('font/IropkeBatangM.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'm12';
+    src: url('font/�쒖슱�쒓컯 �μ껜B.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 's1';
+    src: url('font/NanumBrush.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 's2';
+    src: url('font/NanumPen.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 's3';
+    src: url('font/THEFACESHOP INKLIPQUID.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 's4';
+    src: url('font/KimNamyun.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 's5';
+    src: url('font/SDMiSaeng.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 's6';
+    src: url('font/BMYEONSUNG_ttf.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 's7';
+    src: url('font/SDKukdetopokki-aLt.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 's8';
+    src: url('font/HogookStd.woff2') format('woff2'),
+    url('font/HogookStd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;}
+
+@font-face {
+    font-family: 's9';
+    src: url('font/SSFlowerRoad.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 's10';
+    src: url('font/DAON_BOLLAGCHE.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 's11';
+    src: url('font/dovemayo_bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 's12';
+    src: url('font/tvN Enjoystories Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'e1';
+    src: url('font/Kiona-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'e2';
+    src: url('font/Track.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'e3';
+    src: url('font/CaviarDreams_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'e4';
+    src: url('font/TrashHand.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'e5';
+    src: url('font/ageng sans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'e6';
+    src: url('font/Sanlabello.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'e7';
+    src: url('font/Monoround.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'e8';
+    src: url('font/COOPBL.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'e9';
+    src: url('font/HARLOWSI.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'e10';
+    src: url('font/ELEPHNT.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'e11';
+    src: url('font/OptimusPrinceps.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'e12';
+    src: url('font/Barcelony.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'c1';
+    src: url('font/AdobeKaitiStd-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'c2';
+    src: url('font/SOURCEHANSERIF-LIGHT.TTC') format('truetype');
+}
+
+@font-face {
+    font-family: 'c3';
+    src: url('font/AdobeFangsongStd-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'c4';
+    src: url('font/S2G\ Love\ \(Incomplete\ font\)\ Handwriting\ Chinese\ Font\ -Simplified\ Chinese\ Fonts.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'c5';
+    src: url('font/msyhl_0.ttc') format('truetype');
+}
+
+@font-face {
+    font-family: 'c6';
+    src: url('font/Natural\ Writing\ Brush\(HOT-Ninja\ Std\ R\)\ Font-Traditional\ Chinese.otf') format('truetype');
+}
+
+#email-box {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end
+}
+
+#result-summary {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.subsidiary-select {
+    width: 100%;
+    margin-top: 38px;
+}
+
+.subsidiary-cnt-name {
+    width: 100px;
+    text-align : center;
+}
+
+.subsidiary-cnt {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.subsidiary-cnt span{
+    margin-left: 5px;
+}
+
+.subsidiary-select-container{
+    display: flex;
+    justify-content: center;
+
+    background-color: #f7f8f8;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: large;
+    min-height: 400px;
+}
+
+
+.subsidiary-submit-container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 16px;
+    margin-top: 20px;
+}
+
+
+
+
+.subsidiary-select__preview {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.subsidiary-cnt input {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.subsidiary-cnt select {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.subsidiary-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subsidiary-select__selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'nanum-square-B';
+    box-sizing: border-box;
+}
+
+
+.body{
+    width: 100vw;
+    margin:0;
+
+}
+
+.estimate-calculator{
+    width: 90%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.title{
+    padding: 60px 30px;
+    font-size: 38px;
+    font-weight: 600;
+    font-family: 'nanum-square-B';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-title{
+    font-size: 18px;
+    margin-top : 20px;
+}
+
+.letter-style-select{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 48px 48px;
+    background-color: #f7f8f8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.letter-style-select__selector-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+.letter-style-select__selector{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'nanum-square-B';
+}
+
+.letter-style__sign-input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top : 20px;
+    font-family: 'nanum-square-B';
+    font-size: 17px;
+}
+
+.max-width {
+    width: 100%;
+}
+
+.sign-content-input-mall{
+    width: calc(100% - 90px);
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.sign-content-input-mall input{
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.letter-selector{
+    width: calc(100% - 110px);
+    min-width: 150px;
+    margin : 0 5px 0 16px;
+}
+
+
+.letter-selector select {
+    width: 100%;
+    height: 30px;
+    text-align-last: center;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+}
+
+.letter-style-select__preview-smartstore{
+    width: 100%;
+    margin : 30px 0;
+}
+
+.letter-style-select__preview-smartstore img{
+    width: 100%;
+
+}
+
+.letter-style-select__preview-mall{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin : 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+#letter-font-preview{
+    font-family: 'g1';
+    color: #565656;
+}
+
+.letter-style-select__description{
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+    font-family: 'nanum-square-L';
+
+}
+
+.estimate-container {
+    width: 100%;
+    margin: 140px 0 40px 0;
+}
+
+.estimate-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f7f8f8;
+    border-radius: 10px;
+    margin: 12px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+
+.estimate-select{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 40px 0;
+}
+.estimate-select__preview{
+    width: 50%;
+    border-radius: 10px;
+    background-color: #f7f8f8;
+}
+
+.estimate-select__preview img{
+    width: 100%;
+    border-radius: 12px;
+}
+.estimate-select__content{
+    width: 50%;
+    box-sizing: border-box;
+    padding : 0 0 10px 34px;
+    display: flex;
+    flex-direction: column;
+
+}
+.estimate-select__selector-container{
+    font-size: 18px;
+}
+.estimate-select__selector{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    font-family: 'nanum-square-B';
+    box-sizing: border-box;
+}
+
+.estimate-select__sign-input{
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    margin : 20px 0;
+    font-family: 'nanum-square-B';
+
+}
+
+.estimate-select__sign-input-title{
+    margin-top: 4px;
+}
+
+.sign-name {
+    width: 10%;
+}
+
+.subsidiary-selector {
+    width: 50%;
+}
+
+.pay-alert{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.subsidiary-selector select {
+    width: 100%;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+}
+
+.sign-selector{
+    width: 90%;
+    margin : 0 16px 0 34px;
+}
+
+.sign-selector select {
+    width: 100%;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+}
+
+.sign-input {
+    width: 90%;
+    margin : 0 16px 0 34px;
+}
+
+.sign-input input{
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#sign-height-input{
+    background-size: 24px;
+    background-position: 36px 8px;
+    background-repeat: no-repeat;
+}
+
+.sign-content-input {
+    width: calc(100% - 84px);
+    box-sizing: border-box;
+    height: 120px;
+    margin : 0 16px 0 34px;
+}
+
+.sign-content-input input{
+    height: 120px;
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.sign-content-input textarea{
+    height: 120px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+
+.content-input {
+    height: 120px !important;
+}
+
+.estimate-select__button{
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.estimate-result{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+.estimate-result__table{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f7f8f8;
+    border-radius: 10px;
+    margin: 24px 0;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.estimate-result__table table{
+    margin-bottom: 30px;
+}
+
+.estimate-result__table-price{
+    margin-top : auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.estimate-result__price{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top : 14px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.price{
+    margin-left: 30px;
+}
+
+hr {
+    width: 100%;
+    background-color: #dddddd;
+}
+
+.estimate-result__description{
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'nanum-square-B';
+
+}
+
+.estimate-result__description div {
+    margin-top: auto;
+}
+
+.estimate-result__purchase-quantity{
+    padding : 0 16px;
+    margin: 0 4px;
+    border-bottom: 1px solid #000000;
+    font-size: 26px;
+}
+
+.estimate-result__summary{font-size: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 24px 0;
+    /*border: 1px solid #c9caca;*/
+    /*border-radius: 10px;*/
+    min-height: 100px;
+    line-height: 2;
+}
+
+.estimate-result__copy-button{}
+
+.delete-button{
+    height: 14px;
+    width: 14px;
+    padding: 0;
+}
+
+.delete-button img{
+    width: 100%;
+}
+
+.white-button{
+    margin : 4px;
+    border: 1px solid #afafaf;
+    border-radius: 8px;
+    padding: 10px 22px;
+    color:#727171;
+    font-family: 'nanum-square-B';
+    font-size: 19px;
+}
+
+.black-button{
+    margin: 4px;
+    background-color: #727171;
+    border: 1px solid #727171;
+    border-radius: 8px;
+    padding: 10px 22px;
+    color: white;
+    font-family: 'nanum-square-B';
+    font-size: 19px;
+}
+
+.copy-button{
+    background-color: #727171;
+    border-radius: 8px;
+    padding: 16px 24px;
+    color: white;
+}
+
+.copy-button__main-title{
+    font-size: 20px;
+    font-family: 'nanum-square-B';
+}
+.copy-button__sub-title{
+    font-size: 16px;
+    padding-top: 6px;
+    font-family: 'nanum-square-L';
+
+}
+
+.copy-button-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.copy-button-description{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'nanum-square-L';
+    font-size: 16px;
+    margin: 16px 0;
+    line-height: 1.5;
+}
+
+button{
+    outline: 0;
+    background: inherit ;
+    border:none;
+    box-shadow:none;
+    border-radius:0;
+    cursor:pointer
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+    text-align: center;
+}
+
+th {
+    padding: 12px;
+    font-family: 'nanum-square-L';
+
+}
+
+td{
+    padding: 8px;
+}
