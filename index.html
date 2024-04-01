@@ -1,258 +1,304 @@
 <html lang="ko" coupert-item="9AF8D9A4E502F3784AD24272D81F0381">
-<head style="height: 100%;">
-    <meta charset="UTF-8">
-    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
-    <meta http-equiv="Expires" content="-1">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <link rel="stylesheet" href="http://3dtext.kinglexan.co.kr/mall.css">
-    <link rel="stylesheet" href="http://3dtext.kinglexan.co.kr/smartstore.css">
-    <link rel="stylesheet" href="style.css">
-    <script>var rubber = true;</script>
+  <head style="height: 100%">
+    <meta charset="UTF-8" />
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="stylesheet" href="http://3dtext.kinglexan.co.kr/mall.css" />
+    <link
+      rel="stylesheet"
+      href="http://3dtext.kinglexan.co.kr/smartstore.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      var rubber = true;
+    </script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-<!--    <script src="https://unpkg.com/smtp.js/dist/smtp.min.js"></script>-->
+    <!--    <script src="https://unpkg.com/smtp.js/dist/smtp.min.js"></script>-->
     <script src="script.js"></script>
-</head>
-<body class="body vsc-initialized" style="height: 100%;">
+  </head>
+  <body class="body vsc-initialized" style="height: 100%">
     <div class="estimate-container">
       <div class="estimate-title">
-          <h3>1. 필요한 목재 종류를 선택해 주세요.</h3>
+        <h3>1. 필요한 목재 종류를 선택해 주세요.</h3>
       </div>
-        <iframe src="https://ahnzdesign.github.io/ahnz.github.io/"></iframe>
       <div class="estimate-select">
-          <div class="estimate-select__preview">
-              <img id="sign-preview">
-          </div>
-          <div class="estimate-select__content">
-              <div class="estimate-select__selector-container">
-                  <div class="estimate-select__selector">
-                      <div class="sign-name">색상</div>
-                      <div class="sign-selector">
-                          <select id="sign-color-select" onchange="handleOnChangeSignColor(this)">
-                              <option value="-1" id="color-selection">색상을 선택하세요.</option>
-                              <option value="r1" name="무광/제로화이트">무광/제로화이트</option>
-                              <option value="r2" name="무광/제로밀키">무광/제로밀키</option>
-                              <option value="r3" name="무광/제로실키">무광/제로실키</option>
-                              <option value="r4" name="무광/제로다크">무광/제로다크</option>
-                              <option value="r5" name="유광/UV화이트">유광/UV화이트</option>
-                              <option value="r6" name="유광/UV화이트펄">유광/UV화이트펄</option>
-                              <option value="r7" name="유광/UV회색펄">유광/UV회색펄</option>
-                              <option value="r8" name="LPM/산타나">LPM/산타나</option>
-                              <option value="r9" name="LPM/아카시아">LPM/아카시아</option>
-                              <option value="r10" name="LPM/다크오크">LPM/다크오크</option>
-                              <option value="r11" name="LPM/네추럴오크">LPM/네추럴오크</option>
-                              <option value="r12" name="PB/그레이">PB/그레이</option>
-                              <option value="r13" name="PB/백색">PB/백색</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div class="estimate-select__selector">
-                      <div class="sign-name">두께 </div>
-                      <div class="sign-input">
-                          <input id="sign-thickness-select" onchange="handleOnChangeSignColor(this)" readonly/>
-                      </div>
-                  </div>
-                  <div class="estimate-select__selector">
-                      <div class="sign-name">폭</div>
-                      <div class="sign-selector">
-                          <select id="sign-width-select">
-                              <option  id="width-selection" value="-1">폭을 선택하세요.</option>
-                              <option value="0">50 mm</option>
-                              <option value="1">100 mm</option>
-                              <option value="2">200 mm</option>
-                              <option value="3">300 mm</option>
-                              <option value="4">400 mm</option>
-                              <option value="5">500 mm</option>
-                              <option value="6">600 mm</option>
-                              <option value="7">700 mm</option>
-                              <option value="8">800 mm</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div class="estimate-select__selector">
-                      <div class="sign-name">길이</div>
-                      <div class="sign-selector">
-                          <select id="sign-length-select">
-                              <option  id="length-selection" value="-1">길이을 선택하세요.</option>
-                              <option value="0">50 mm</option>
-                              <option value="1">100 mm</option>
-                              <option value="2">200 mm</option>
-                              <option value="3">300 mm</option>
-                              <option value="4">400 mm</option>
-                              <option value="5">500 mm</option>
-                              <option value="6">600 mm</option>
-                              <option value="7">700 mm</option>
-                              <option value="8">800 mm</option>
-                              <option value="9">900 mm</option>
-                              <option value="10">1000 mm</option>
-                              <option value="11">1100 mm</option>
-                              <option value="12">1200 mm</option>
-                              <option value="13">1300 mm</option>
-                              <option value="14">1400 mm</option>
-                              <option value="15">1500 mm</option>
-                              <option value="16">1600 mm</option>
-                              <option value="17">1700 mm</option>
-                              <option value="18">1800 mm</option>
-                              <option value="19">1900 mm</option>
-                              <option value="20">2000 mm</option>
-                              <option value="21">2100 mm</option>
-                              <option value="22">2200 mm</option>
-                              <option value="23">2300 mm</option>
-                              <option value="24">2400 mm</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div class="estimate-select__selector">
-                      <div class="sign-name">수량</div>
-                      <div class="sign-input">
-                          <input id="sign-count-input" type="number" min="1" max="50">
-                      </div>
-                  </div>
-                  <div class="estimate-select__selector">
-                      <div class="sign-name">금액</div>
-                      <div class="sign-input">
-                          <input id = "price-input" type="text" readonly>
-                      </div>
-                  </div>
-                  <div class="estimate-select__selector">
-                      <div class="sign-name">가공 종류</div>
-                      <div class="sign-selector">
-                          <select id="processing-type-select" onchange="updatePrice()">
-                              <option value="0">경첩홈파기</option>
-                              <option value="1">우라홈(+2000)</option>
-                          </select>
-                      </div>
-                  </div>
+        <div class="estimate-select__preview">
+          <img id="sign-preview" />
+        </div>
+        <div class="estimate-select__content">
+          <div class="estimate-select__selector-container">
+            <div class="estimate-select__selector">
+              <div class="sign-name">색상</div>
+              <div class="sign-selector">
+                <select
+                  id="sign-color-select"
+                  onchange="handleOnChangeSignColor(this)"
+                >
+                  <option value="-1" id="color-selection">
+                    색상을 선택하세요.
+                  </option>
+                  <option value="r1" name="무광/제로화이트">
+                    무광/제로화이트
+                  </option>
+                  <option value="r2" name="무광/제로밀키">무광/제로밀키</option>
+                  <option value="r3" name="무광/제로실키">무광/제로실키</option>
+                  <option value="r4" name="무광/제로다크">무광/제로다크</option>
+                  <option value="r5" name="유광/UV화이트">유광/UV화이트</option>
+                  <option value="r6" name="유광/UV화이트펄">
+                    유광/UV화이트펄
+                  </option>
+                  <option value="r7" name="유광/UV회색펄">유광/UV회색펄</option>
+                  <option value="r8" name="LPM/산타나">LPM/산타나</option>
+                  <option value="r9" name="LPM/아카시아">LPM/아카시아</option>
+                  <option value="r10" name="LPM/다크오크">LPM/다크오크</option>
+                  <option value="r11" name="LPM/네추럴오크">
+                    LPM/네추럴오크
+                  </option>
+                  <option value="r12" name="PB/그레이">PB/그레이</option>
+                  <option value="r13" name="PB/백색">PB/백색</option>
+                </select>
               </div>
-              <div class="estimate-select__button">
-                  <button id="contact-us-button-mall" class="white-button mall">상담연결</button>
-                  <button id="contact-us-button-smartstore" class="white-button smartstore">상담연결</button>
-                  <button id="add-estimate-button" class="black-button">견적추가</button>
+            </div>
+            <div class="estimate-select__selector">
+              <div class="sign-name">두께</div>
+              <div class="sign-input">
+                <input
+                  id="sign-thickness-select"
+                  onchange="handleOnChangeSignColor(this)"
+                  readonly
+                />
               </div>
+            </div>
+            <div class="estimate-select__selector">
+              <div class="sign-name">폭</div>
+              <div class="sign-selector">
+                <select id="sign-width-select">
+                  <option id="width-selection" value="-1">
+                    폭을 선택하세요.
+                  </option>
+                  <option value="0">50 mm</option>
+                  <option value="1">100 mm</option>
+                  <option value="2">200 mm</option>
+                  <option value="3">300 mm</option>
+                  <option value="4">400 mm</option>
+                  <option value="5">500 mm</option>
+                  <option value="6">600 mm</option>
+                  <option value="7">700 mm</option>
+                  <option value="8">800 mm</option>
+                </select>
+              </div>
+            </div>
+            <div class="estimate-select__selector">
+              <div class="sign-name">길이</div>
+              <div class="sign-selector">
+                <select id="sign-length-select">
+                  <option id="length-selection" value="-1">
+                    길이을 선택하세요.
+                  </option>
+                  <option value="0">50 mm</option>
+                  <option value="1">100 mm</option>
+                  <option value="2">200 mm</option>
+                  <option value="3">300 mm</option>
+                  <option value="4">400 mm</option>
+                  <option value="5">500 mm</option>
+                  <option value="6">600 mm</option>
+                  <option value="7">700 mm</option>
+                  <option value="8">800 mm</option>
+                  <option value="9">900 mm</option>
+                  <option value="10">1000 mm</option>
+                  <option value="11">1100 mm</option>
+                  <option value="12">1200 mm</option>
+                  <option value="13">1300 mm</option>
+                  <option value="14">1400 mm</option>
+                  <option value="15">1500 mm</option>
+                  <option value="16">1600 mm</option>
+                  <option value="17">1700 mm</option>
+                  <option value="18">1800 mm</option>
+                  <option value="19">1900 mm</option>
+                  <option value="20">2000 mm</option>
+                  <option value="21">2100 mm</option>
+                  <option value="22">2200 mm</option>
+                  <option value="23">2300 mm</option>
+                  <option value="24">2400 mm</option>
+                </select>
+              </div>
+            </div>
+            <div class="estimate-select__selector">
+              <div class="sign-name">수량</div>
+              <div class="sign-input">
+                <input id="sign-count-input" type="number" min="1" max="50" />
+              </div>
+            </div>
+            <div class="estimate-select__selector">
+              <div class="sign-name">금액</div>
+              <div class="sign-input">
+                <input id="price-input" type="text" readonly />
+              </div>
+            </div>
+            <div class="estimate-select__selector">
+              <div class="sign-name">가공 종류</div>
+              <div class="sign-selector">
+                <select id="processing-type-select" onchange="updatePrice()">
+                  <option value="0">경첩홈파기</option>
+                  <option value="1">우라홈(+2000)</option>
+                </select>
+              </div>
+            </div>
           </div>
+          <div class="estimate-select__button">
+            <button id="contact-us-button-mall" class="white-button mall">
+              상담연결
+            </button>
+            <button
+              id="contact-us-button-smartstore"
+              class="white-button smartstore"
+            >
+              상담연결
+            </button>
+            <button id="add-estimate-button" class="black-button">
+              견적추가
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="estimate-container">
-        <div class="estimate-title">
-            <h3>2. 필요한 부자재 및 손잡이가 있는 경우 선택해 주세요. .</h3>
+      <div class="estimate-title">
+        <h3>2. 필요한 부자재 및 손잡이가 있는 경우 선택해 주세요. .</h3>
+      </div>
+      <div class="subsidiary-select">
+        <div class="subsidiary-div">
+          <div class="subsidiary-selector">
+            <select id="subsidiary-select__selector">
+              <option id="subsidiary-selection" value="-1">
+                선택해 주세요.
+              </option>
+              <option value="0">스마트바 손잡이 실버</option>
+              <option value="1">스마트바 손잡이 흑색</option>
+              <option value="2">멜로디 손잡이 실버</option>
+              <option value="3">멜로디 손잡이 흑색</option>
+              <option value="4">원형(소) 실버</option>
+              <option value="5">원형(소) 골드</option>
+              <option value="6">원형(대) 실버</option>
+              <option value="7">원형(대) 골드</option>
+              <option value="8">라운드바 140 백색</option>
+              <option value="9">라운드바 140 흑색</option>
+              <option value="10">라운드바 200 백색</option>
+              <option value="11">라운드바 200 흑색</option>
+              <option value="12">스티커 (아이보리)</option>
+              <option value="13">스티커 (화이트)</option>
+              <option value="14">스티커 (연회색)</option>
+              <option value="15">아웃도어 싱크/가구 저압경첩</option>
+              <option value="16">인도어 싱크/가구 경첩</option>
+              <option value="17">경첩피스(20개)</option>
+            </select>
+          </div>
+          <div
+            class="subsidiary-cnt"
+            id="subsidiary-size"
+            style="visibility: hidden"
+          >
+            <div class="subsidiary-cnt-name">치수</div>
+            <select id="sign-subsidiary-size-select">
+              <option id="subsidiary-size-selection" value="-1">치수</option>
+              <option value="0">600</option>
+              <option value="1">1200</option>
+              <option value="2">1800</option>
+            </select>
+            <span>mm</span>
+          </div>
+          <div class="subsidiary-cnt">
+            <div class="subsidiary-cnt-name">수량</div>
+            <input id="sign-subsidiary-cnt-select" />
+            <span>개</span>
+          </div>
         </div>
-        <div class="subsidiary-select">
-            <div class="subsidiary-div">
-                <div class="subsidiary-selector ">
-                    <select id="subsidiary-select__selector">
-                        <option id = "subsidiary-selection" value="-1">선택해 주세요.</option>
-                        <option value="0">스마트바 손잡이 실버</option>
-                        <option value="1">스마트바 손잡이 흑색</option>
-                        <option value="2">멜로디 손잡이 실버 </option>
-                        <option value="3">멜로디 손잡이 흑색</option>
-                        <option value="4">원형(소) 실버 </option>
-                        <option value="5">원형(소) 골드</option>
-                        <option value="6">원형(대) 실버 </option>
-                        <option value="7">원형(대) 골드</option>
-                        <option value="8">라운드바 140 백색</option>
-                        <option value="9">라운드바 140 흑색</option>
-                        <option value="10">라운드바 200 백색</option>
-                        <option value="11">라운드바 200 흑색</option>
-                        <option value="12">스티커 (아이보리)</option>
-                        <option value="13">스티커 (화이트)</option>
-                        <option value="14">스티커 (연회색)</option>
-                        <option value="15">아웃도어 싱크/가구 저압경첩</option>
-                        <option value="16">인도어 싱크/가구 경첩</option>
-                        <option value="17">경첩피스(20개)</option>
-                    </select>
-                </div>
-                <div class="subsidiary-cnt" id="subsidiary-size" style="visibility: hidden">
-                    <div class="subsidiary-cnt-name">치수</div>
-                    <select id="sign-subsidiary-size-select">
-                        <option id="subsidiary-size-selection" value="-1">치수</option>
-                        <option value="0">600</option>
-                        <option value="1">1200</option>
-                        <option value="2">1800</option>
-                    </select>
-                    <span>mm</span>
-                </div>
-                <div class="subsidiary-cnt">
-                    <div class="subsidiary-cnt-name">수량</div>
-                    <input id="sign-subsidiary-cnt-select">
-                    <span>개</span>
-                </div>
-            </div>
-            <div id="subsidiary-select-container" class="subsidiary-select-container">
-                <div class="subsidiary-select__preview">
-                </div>
-            </div>
+        <div
+          id="subsidiary-select-container"
+          class="subsidiary-select-container"
+        >
+          <div class="subsidiary-select__preview"></div>
         </div>
-        <div class="subsidiary-submit-container">
-            <button id="add-subsidiary-button" class="black-button">견적추가</button>
-        </div>
+      </div>
+      <div class="subsidiary-submit-container">
+        <button id="add-subsidiary-button" class="black-button">
+          견적추가
+        </button>
+      </div>
     </div>
 
     <div class="estimate-container">
-        <div class="estimate-title">
-            <h3>3. 최종 견적서를 확인 후 판매자에게 견적내용 보내기를 눌러주세요.</h3>
+      <div class="estimate-title">
+        <h3>
+          3. 최종 견적서를 확인 후 판매자에게 견적내용 보내기를 눌러주세요.
+        </h3>
+      </div>
+      <div class="estimate-result">
+        <div class="estimate-result__table">
+          <table id="estimate-table">
+            <thead>
+              <tr>
+                <th>목재종류</th>
+                <th>두께</th>
+                <th>폭</th>
+                <th>길이</th>
+                <th>수량</th>
+                <th>가공종류</th>
+                <th>금액</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="estimate-table-tbody"></tbody>
+          </table>
+          <div class="estimate-result__table-price">
+            <hr />
+            <div class="estimate-result__price">
+              <div>합계금액</div>
+              <div class="price">
+                ￦
+                <span id="price" value="0">0</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="estimate-result">
-            <div class="estimate-result__table">
-                <table id="estimate-table">
-                    <thead>
-                        <tr>
-                            <th>목재종류</th>
-                            <th>두께</th>
-                            <th>폭</th>
-                            <th>길이</th>
-                            <th>수량</th>
-                            <th>가공종류</th>
-                            <th>금액</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody id="estimate-table-tbody">
-
-                    </tbody>
-                </table>
-                <div class="estimate-result__table-price">
-                    <hr>
-                    <div class="estimate-result__price">
-                        <div>합계금액</div>
-                        <div class="price">￦
-                            <span id="price" value="0">0</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="estimate-result__description smartstore">
-                <div>수량을</div>
-                <div id="purchase-quantity" class="estimate-result__purchase-quantity">0</div>
-                <div>개로 변경해서 구매해주세요</div>
-            </div>
-
-            <div class="estimate-result__summary">
-                <div id="result-summary">
-                    <div id="email-box">
-                        <div class="estimate-select__selector">
-                            <div class="sign-name" style="width: 30%">주문자명 </div>
-                            <div class="sign-input" style="margin: 0;">
-                                <input id="orderer-name-input" placeholder="이름"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <button onclick="sendEmail()" class="copy-button">
-                            <div class="copy-button__main-title">
-                                판매자에게 견적 보내기
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="pay-alert">주문자명과 결제자명이 동일해야합니다.</h3>
-            </div>
-
+        <div class="estimate-result__description smartstore">
+          <div>수량을</div>
+          <div
+            id="purchase-quantity"
+            class="estimate-result__purchase-quantity"
+          >
+            0
+          </div>
+          <div>개로 변경해서 구매해주세요</div>
         </div>
+
+        <div class="estimate-result__summary">
+          <div id="result-summary">
+            <div id="email-box">
+              <div class="estimate-select__selector">
+                <div class="sign-name" style="width: 30%">주문자명</div>
+                <div class="sign-input" style="margin: 0">
+                  <input id="orderer-name-input" placeholder="이름" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <button onclick="sendEmail()" class="copy-button">
+                <div class="copy-button__main-title">
+                  판매자에게 견적 보내기
+                </div>
+              </button>
+            </div>
+          </div>
+          <h3 class="pay-alert">주문자명과 결제자명이 동일해야합니다.</h3>
+        </div>
+      </div>
     </div>
     <footer></footer>
-</body>
+  </body>
 </html>
