@@ -259,7 +259,7 @@ const sendEmail = () => {
       Accept: "application/json",
     },
     data: {
-      email: "dltmd202@gmail.com",
+      email: "goodtime1998@naver.com",
       message: `주문자명: ${orderer.value}
       주문:
       ${detail}
